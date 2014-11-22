@@ -1,4 +1,3 @@
-GeanyTheme-Dark
-===============
+### GeanyTheme-Dark
 
 Dark theme for Geany
