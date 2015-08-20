@@ -1,20 +1,20 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # foreground;background;bold;italic
-default=default;default;true;false
+default=default
 comment=comment
 commentline=comment
 commentdoc=commentdoc
 number=number
-word=0x99aaff;0x111111;false;false
+word=word
 word2=word2
-string=0xddaaff;0x111111;false;false
-character=0xeeeeee;0x111111;false;true
+string=string
+character=string
 uuid=0x404080
-#uuid=ffffff
+#uuid=0x000000
 preprocessor=preprocessor
 operator=operator
-identifier=0xddccaa;0x111111;false;false
+identifier=default
 stringeol=stringeol
 # @"verbatim"
 verbatim=0xffffff
@@ -27,18 +27,24 @@ globalclass=type
 
 [keywords]
 # all items must be in one line
-primary=abs abstract acos anchor asin atan atan2 big bold boolean break byte case catch ceil char charAt charCodeAt class concat const continue cos Date debugger default delete do double else enum escape eval exp export extends false final finally fixed float floor fontcolor fontsize for fromCharCode function goto if implements import in indexOf Infinity instanceof int interface isFinite isNaN italics join lastIndexOf length link log long Math max MAX_VALUE min MIN_VALUE NaN native NEGATIVE_INFINITY new null Number package parseFloat parseInt pop POSITIVE_INFINITY pow private protected public push random return reverse round shift short sin slice small sort splice split sqrt static strike string String sub substr substring sup super switch synchronized tan this throw throws toLowerCase toString toUpperCase transient true try typeof undefined unescape unshift valueOf var void volatile while with
+#primary=
+#secondary=
+# these are some doxygen keywords (incomplete)
+#docComment=attention author brief bug class code date def enum example exception file fn namespace note param remarks return see since struct throw todo typedef var version warning union
 
 [settings]
 # default extension used when saving files
-#extension=js
+#extension=vala
 
 # the following characters are these which a "word" can contains, see documentation
 #wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 
 # if only single comment char is supported like # in this file, leave comment_close blank
-comment_open=//
-comment_close=
+#comment_open=//
+#comment_close=
+# this is an alternative way, so multiline comments are used
+#comment_open=/*
+#comment_close=*/
 
 # set to false if a comment character/string should start at column 0 of a line, true uses any
 # indentation of the line, e.g. setting to true causes the following on pressing CTRL+d
@@ -46,16 +52,15 @@ comment_close=
 # setting to false would generate this
 #	command_example();
 # This setting works only for single line comments
-comment_use_indent=true
+#comment_use_indent=true
 
 # context action command (please see Geany's main documentation for details)
-context_action_cmd=
+#context_action_cmd=
 
 [build_settings]
 # %f will be replaced by the complete filename
 # %e will be replaced by the filename without extension
 # (use only one of it at one time)
-compiler=
-run=
-
-
+compiler=valac -c "%f"
+linker=valac "%f"
+run_cmd=./"%e"

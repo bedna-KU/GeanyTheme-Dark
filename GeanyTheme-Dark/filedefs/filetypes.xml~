@@ -1,71 +1,72 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # foreground;background;bold;italic
-html_default=0x777777;0x111111;false;false
-html_tag=0x0070ff;;false;false
-html_tagunknown=0xff0000;0x111111;false;false
-html_attribute=0x007f00;0x111111;false;false
-html_attributeunknown=0xff0000;0x111111;false;false
-html_number=0x800080;0x111111;false;false
-html_doublestring=0xff901e;0x111111;false;false
-html_singlestring=0xff901e;0x111111;false;false
-html_other=0x800080;0x111111;false;false
-html_comment=0x808080;0x111111;false;false
-html_entity=0x800080;0x111111;false;false
-html_tagend=0x0070ff;0x111111;false;false
+html_default=0xffffff;0x000000;false;false
+html_tag=0xff6600;0x000000;false;false
+html_tagunknown=0xffffff;0x000000;false;false
+html_attribute=0x99cc99;0x000000;false;false
+html_attributeunknown=0xffffff;0x000000;false;false
+html_number=0xccff33;0x000000;false;false
+html_doublestring=0x66ff00;0x000000;false;false
+html_singlestring=0x66ff00;0x000000;false;false
+html_other=0xffffff;0x000000;false;false
+html_comment=comment
+html_entity=0xffffff;0x000000;false;false
+html_tagend=0xffffff;0x000000;false;false
 # <?
-html_xmlstart=0x0070ff;0x111111;false;false
+html_xmlstart=0x99cc99;0x000000;false;false
 # ?>
-html_xmlend=0x0070ff;0x111111;false;false
+html_xmlend=0x99cc99;0x000000;false;false
 # <script
-html_script=0x0070ff;0x111111;false;false
+html_script=0xffffff;0x000000;false;false
 # <% ... %>
-html_asp=0x004f4f;0x111111;false;false
+html_asp=0x66ff00;0x000000;false;false
 # <%@ ... %>
-html_aspat=0x004f4f;0x111111;false;false
-html_cdata=0x660099;0x111111;false;false
-html_question=0x0000ff;0x111111;false;false
-html_value=0x660099;0x111111;false;false
-html_xccomment=0x660099;0x111111;false;false
+html_aspat=0xffffff;0x000000;false;false
+html_cdata=0xff8000;0x000000;false;false
+html_question=0x0000ff;0x000000;false;false
+html_value=0xff8000;0x000000;false;false
+html_xccomment=commentdoc
 
-sgml_default=0x0070ff;0x111111;false;false
-sgml_comment=0x808080;0x111111;false;false
-sgml_special=0x007f00;0x111111;false;false
-sgml_command=0x0070ff;0x111111;true;false
-sgml_doublestring=0xff901e;0x111111;false;false
-sgml_simplestring=0xff901e;0x111111;false;false
-sgml_1st_param=0x404080;0x111111;false;false
-sgml_entity=0xbf7171;0x111111;false;false
-sgml_block_default=0xfdffc2;0x111111;false;false
-sgml_1st_param_comment=0x406090;0x111111;false;false
-sgml_error=0xff0000;0x111111;false;false
+sgml_default=0xffffff;0x000000;false;false
+sgml_comment=comment;0x000000;false;false
+sgml_special=0xff8000;0x000000;false;false
+sgml_command=0xff6600;0x000000;true;false
+sgml_doublestring=0x66ff00;0x000000;false;false
+sgml_simplestring=0x66ff00;0x000000;false;false
+sgml_1st_param=0x99cc99;0x000000;false;false
+sgml_entity=0xffffff;0x000000;false;false
+sgml_block_default=0xffffff;0x000000;false;false
+sgml_1st_param_comment=comment;0x000000;false;false
+sgml_error=0xff80c0;0x000000;false;false
 
-php_default=0xdddddd;0x111111;true;false
-php_simplestring=0xeeeeee;0x111111;false;true
-php_hstring=0xddaaff;0x111111;false;false
-php_number=number
-php_word=0x99aaff;0x111111;false;false
-php_variable=0xddccaa;0x111111;false;false
-php_comment=0x808080;0x111111;false;false
-php_commentline=0x808080;0x111111;false;false
-php_operator=0xfffb00;0x111111;false;false
-php_hstring_variable=0xffcc77;0x111111;false;false
-php_complex_variable=0xffcc77;0x111111;false;false
+php_default=0xffffff;0x000000;false;false
+php_simplestring=0x66ff00;0x000000;false;false
+php_hstring=0x66ff00;0x000000;false;false
+php_number=0xccff33;0x000000;false;false
+php_word=0xff6600;0x000000;false;false
+php_variable=0xffffff;0x000000;true;false
+php_comment=comment;0x000000;false;false
+php_commentline=0x9933cc;0x000000;false;false
+php_operator=0x66ff00;0x000000;false;false
+php_hstring_variable=0x66ff00;0x000000;false;false
+php_complex_variable=0xffcc00;0x000000;false;false
 
 # used for JavaScript, ASP Javascript, VBScript
-jscript_start=0x008080;0x111111;false;false
-jscript_default=0x00c7d9;0x111111;false;false
-jscript_comment=0xd00000;0x111111;false;false
-jscript_commentline=0xd00000;0x111111;false;false
-jscript_commentdoc=0x3f5fbf;0x111111;true;false
-jscript_number=0x00b300;0x111111;false;false
-jscript_word=0xe600ff;0x111111;false;false
-jscript_keyword=0x0070ff;0x111111;true;false
-jscript_doublestring=0xff901e;0x111111;false;false
-jscript_singlestring=0xff901e;0x111111;false;false
+jscript_start=0xffffff;0x000000;false;false
+jscript_default=0xffffff;0x000000;false;false
+jscript_comment=comment;0x000000;false;false
+jscript_commentline=0x9933cc;0x000000;false;false
+jscript_commentdoc=0x772cb7;0x070707;true;false
+jscript_number=number
+jscript_word=default
+jscript_keyword=word
+jscript_doublestring=string
+jscript_singlestring=string
 # same as operators
-jscript_symbols=0xc25151;0x111111;false;false
-jscript_stringeol=0xff0000;0x111111;false;false
+jscript_symbols=operator
+jscript_stringeol=stringeol
+jscript_regex=0x339999;0x000000;false;false
 
 # for embedded Python script (<script language="python">...</script>), Python styles from
 # filetypes.python are used
@@ -87,14 +88,14 @@ sgml=ELEMENT DOCTYPE ATTLIST ENTITY NOTATION
 #wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 
 # if only single comment char is supported like # in this file, leave comment_close blank
-comment_open=//
-comment_close=
+comment_open=<!--
+comment_close=-->
 
 # set to false if a comment character/string should start at column 0 of a line, true uses any
 # indentation of the line, e.g. setting to true causes the following on pressing CTRL+d
-	#command_example();
+    #command_example();
 # setting to false would generate this
-#	command_example();
+#   command_example();
 # This setting works only for single line comments
 comment_use_indent=true
 

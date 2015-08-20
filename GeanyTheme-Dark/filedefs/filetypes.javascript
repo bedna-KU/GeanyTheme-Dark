@@ -1,20 +1,20 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # foreground;background;bold;italic
-default=default;default;true;false
+default=default
 comment=comment
 commentline=comment
 commentdoc=commentdoc
 number=number
-word=0x99aaff;0x111111;false;false
+word=word
 word2=word2
-string=0xddaaff;0x111111;false;false
-character=0xeeeeee;0x111111;false;true
+string=string
+character=string
 uuid=0x404080
 #uuid=ffffff
 preprocessor=preprocessor
 operator=operator
-identifier=0xddccaa;0x111111;false;false
+identifier=default
 stringeol=stringeol
 # @"verbatim"
 verbatim=0xffffff

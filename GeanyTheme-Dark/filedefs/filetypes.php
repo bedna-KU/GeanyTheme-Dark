@@ -40,17 +40,17 @@ sgml_block_default=0xfdffc2;0x111111;false;false
 sgml_1st_param_comment=0x406090;0x111111;false;false
 sgml_error=0xff0000;0x111111;false;false
 
-php_default=0xdddddd;0x111111;true;false
-php_simplestring=0xeeeeee;0x111111;false;true
-php_hstring=0xddaaff;0x111111;false;false
-php_number=number
-php_word=0x99aaff;0x111111;false;false
-php_variable=0xddccaa;0x111111;false;false
+php_default=0x00f2be;0x111111;false;false
+php_simplestring=0xff901e;0x111111;false;false
+php_hstring=0x008000;0x111111;false;false
+php_number=0x606000;0x111111;false;false
+php_word=0x0070ff;0x111111;false;false
+php_variable=0xffffff;0x111111;false;false
 php_comment=0x808080;0x111111;false;false
 php_commentline=0x808080;0x111111;false;false
 php_operator=0xfffb00;0x111111;false;false
-php_hstring_variable=0xffcc77;0x111111;false;false
-php_complex_variable=0xffcc77;0x111111;false;false
+php_hstring_variable=0xffffff;0x111111;false;false
+php_complex_variable=0xffffff;0x111111;false;false
 
 # used for JavaScript, ASP Javascript, VBScript
 jscript_start=0x008080;0x111111;false;false
@@ -87,8 +87,8 @@ sgml=ELEMENT DOCTYPE ATTLIST ENTITY NOTATION
 #wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 
 # if only single comment char is supported like # in this file, leave comment_close blank
-comment_open=//
-comment_close=
+comment_open=<!--
+comment_close=-->
 
 # set to false if a comment character/string should start at column 0 of a line, true uses any
 # indentation of the line, e.g. setting to true causes the following on pressing CTRL+d

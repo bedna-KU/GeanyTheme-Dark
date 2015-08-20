@@ -55,9 +55,9 @@ php_complex_variable=0xffcc00;0x000000;false;false
 # used for JavaScript, ASP Javascript, VBScript
 jscript_start=0xffffff;0x000000;false;false
 jscript_default=0xffffff;0x000000;false;false
-jscript_comment=comment;0x000000;false;false
-jscript_commentline=0x9933cc;0x000000;false;false
-jscript_commentdoc=0x772cb7;0x070707;true;false
+jscript_comment=0xffffff;0x000000;false;false
+jscript_commentline=0xffffff;0x000000;false;false
+jscript_commentdoc=0xffffff;0x070707;true;false
 jscript_number=number
 jscript_word=default
 jscript_keyword=word
